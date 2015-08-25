@@ -16,8 +16,17 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+	<preference name="SplashScreen" value="splash" />
+	<preference name="SplashScreenDelay" value="10000" />
+	<preference name="show-splash-screen-spinner" value="true" />
+	<preference name="auto-hide-splash-screen" value="true" />
+		
     <platform name="android">
         <allow-intent href="market:*" />
+		<splash src="res/drawable-land-hdpi/splash.png" density="land-hdpi"/>
+		<splash src="res/drawable-land-ldpi/splash.png" density="land-ldpi"/>
+		<splash src="res/drawable-land-mdpi/splash.png" density="land-mdpi"/>
+		<splash src="res/drawable-land-xhdpi/splash.png" density="land-xhdpi"/>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
